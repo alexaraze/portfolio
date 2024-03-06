@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;  
+}
+
+/* TEXT */
+@font-face {
+    font-family: 'impact-label';
+    src: url('Fonts/Impact Label.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'impact-label-reversed';
+    src: url('Fonts/Impact Label Reversed.ttf') format('truetype');
+}
+h1{
+    font-family: 'Impact Label Reversed', sans-serif;
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 150%;
+    color: #ffffff;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+h2{
+  font-family: 'Impact Label Reversed', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  text-decoration: underline;
+  line-height: 150%;
+  color: #ffffff;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+h3{
+    font-family: 'Impact Label Reversed', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150%;
+    color: #ffffff;
+    white-space: nowrap;
+    margin: 0 auto;
+  }
+h4{
+    font-family: 'Impact Label Reversed', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: underline;
+    line-height: 150%;
+    color: #ffffff;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
+/* BACKGROUND */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; 
+    z-index: -1;
+
+    background-image: url('assets/irisraze_haze.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: #000000; /* Black background in case image doesn't load */
+}
+
+/* LOGO */
+.monogram {
+    width: 100%;
+    height: 20vh;
+    position: fixed;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    background-image: url('assets/ac_monogram.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* DIVS */
+.alexa-chomat {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 43vh;
+    z-index: 2;
+}
+
+.portfolio a {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 61vh;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.flex-item {
+    flex: 1;
+    min-width: 160px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .monogram {
+        height: 15vh;
+        top: 15%;
+    }
+    .alexa-chomat, .portfolio {
+        position: relative;
+        top: initial;
+        bottom: initial;
+    }
+
+    .alexa-chomat {
+        top: 35%;
+    }
+
+    .portfolio a{
+        top: 50%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        position: fixed;
+        bottom: 10%;
+    }
+}
+
