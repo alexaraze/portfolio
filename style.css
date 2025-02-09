@@ -13,7 +13,7 @@ body {
     src: url('Fonts/Impact Label Reversed.ttf') format('truetype');
 }
 h1{
-    font-family: 'Impact Label Reversed', sans-serif;
+    font-family: 'impact-label-reversed', sans-serif;
     font-size: 55px;
     font-weight: 300;
     line-height: 150%;
@@ -22,7 +22,7 @@ h1{
     margin: 0 auto;
 }
 h2{
-  font-family: 'Impact Label Reversed', sans-serif;
+  font-family: 'impact-label-reversed', sans-serif;
   font-size: 28px;
   font-weight: 300;
   text-decoration: underline;
@@ -32,7 +32,7 @@ h2{
   margin: 0 auto;
 }
 h3{
-    font-family: 'Impact Label Reversed', sans-serif;
+    font-family: 'impact-label-reversed', sans-serif;
     font-size: 18px;
     font-weight: 300;
     line-height: 150%;
@@ -41,7 +41,7 @@ h3{
     margin: 0 auto;
   }
 h4{
-    font-family: 'Impact Label Reversed', sans-serif;
+    font-family: 'impact-label-reversed', sans-serif;
     font-size: 18px;
     font-weight: 300;
     text-decoration: underline;
